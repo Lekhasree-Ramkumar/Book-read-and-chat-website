@@ -6,19 +6,19 @@ TOPIC: BOOK READING AND CHATTING WEBSITE
 
 **This project contains the front-end development of book read and chat platform which allows users to have following Access:**
 
-*Users can create an account or Register.
+* Users can create an account or Register.
 
-*Login to the website
+* Login to the website
 
-*Read books and blogs.
+* Read books and blogs.
 
-*Share the Comments.
+* Share the Comments.
 
-*Chat and share comments in the Chat page.
+* Chat and share comments in the Chat page.
 
-*Play games.
+* Play games.
 
-*Logout
+* Logout
 
 **SNAPSHOTS:**
 
