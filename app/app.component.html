@@ -1,0 +1,43 @@
+<!-- nav -->
+<body
+  background="https://t3.ftcdn.net/jpg/03/28/99/96/360_F_328999611_R7dZbaVTV9ygDlVNGYn9rFGe8m3Slah3.jpg"
+>
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/">Home</a>
+      <a class="nav-item nav-link" (click)="blog()">Blogs</a>
+      <a class="nav-item nav-link" (click)="games()">Games</a>
+      <a class="nav-item nav-link" (click)="chat()">Chat</a>
+      <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <!-- main app container -->
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <alert></alert>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h4 style="text-align:center">Share your comments!!!</h4>
+  <br />
+  <div class="addComponent">
+    <input style="margin:0 10px 0px 70px" type="text" [(ngModel)]="inputTxt" />
+    <button (click)="addToList()">Add</button>
+  </div>
+  <br /><br />
+  <ul>
+    <li
+      style="margin:0 50px"
+      *ngFor="let item of listArr; let i = index"
+      (click)="removeItem(i)"
+    >
+      <label>{{ item }}</label>
+      <!--<button (click)="removeItem(i)" > Remove </button> -->
+    </li>
+  </ul>
+</body>
